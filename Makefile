@@ -7,3 +7,6 @@ invoke:
 destroy:
 	terraform destroy
 	rm bootstrap myfunction.zip out.json
+lint:
+	terraform fmt --recursive
+	go fmt ./...

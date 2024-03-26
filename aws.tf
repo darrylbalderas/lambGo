@@ -12,7 +12,7 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-west-2"
+  region = "us-west-2"
 
   default_tags {
     tags = {
@@ -68,9 +68,9 @@ resource "aws_iam_role_policy_attachment" "lambda_logging_policy_attachment" {
 }
 
 locals {
-  binary_path = "bootstrap"
+  binary_path  = "bootstrap"
   archive_path = "myfunction.zip"
-  binary_name = "bootstrap"
+  binary_name  = "bootstrap"
 }
 
 
